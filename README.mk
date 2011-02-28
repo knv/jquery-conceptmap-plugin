@@ -16,4 +16,4 @@ __triple-loader__ is any function which returns a list of objects in form of  `{
 
 ### Licence
 
-Apache Licence 2.0
+MIT Licence
