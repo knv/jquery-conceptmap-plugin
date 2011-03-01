@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Concept Map</title>
+<link rel="stylesheet" href="http://github.com/knv/jquery-conceptmap-plugin/raw/master/style.css" />
+</head>
+<body>
+<div id="container"></div>
+<textarea id="concepts" rows="10" cols="60">
+Ludwig Josef Johann Wittgenstein was a Philosopher
+Ludwig Josef Johann Wittgenstein has nationality Austria
+Ludwig Josef Johann Wittgenstein "lived" (26 April 1889 – 29 April 1951)
+Ludwig Josef Johann Wittgenstein "known for" Logical Positivism
+Ludwig Josef Johann Wittgenstein "known for" Language Philosophy
+Ludwig Josef Johann Wittgenstein "notable works" Tractatus Logico-Philosophicus (1921)
+Ludwig Josef Johann Wittgenstein "notable works" Philosophical Investigations (1953)
+
+
+</textarea>
+</body>
+<script type="text/javascript" src="http://github.com/knv/jquery-conceptmap-plugin/raw/master/jquery.min.js"></script>
+<script type="text/javascript" src="http://github.com/knv/jquery-conceptmap-plugin/raw/master/jquery-ui.min.js"></script>
+<script type="text/javascript" src="http://github.com/knv/jquery-conceptmap-plugin/raw/master/jquery.conceptmap.js"></script>
+<script type="text/javascript" src="http://github.com/knv/jquery-conceptmap-plugin/raw/master/textareaLoader.js"></script>
+<script type="text/javascript">
+$(function() {
+  $("#container").conceptMap({'tripleLoader': textareaLoadEngine});
+});
+</script>
+</html>
