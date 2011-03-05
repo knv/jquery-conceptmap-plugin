@@ -25,7 +25,7 @@ Ludwig Josef Johann Wittgenstein "notable works" Philosophical Investigations (1
 <script type="text/javascript" src="textareaLoader.js"></script>
 <script type="text/javascript">
 $(function() {
-  $("#container").conceptMap({'tripleLoader': textareaLoadEngine});
+  $("#container").conceptMap({'tripleLoader': {func: textareaLoadEngine, args: {}}});
 });
 </script>
 </html>

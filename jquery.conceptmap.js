@@ -283,7 +283,7 @@
 	 this.needsRedraw = true;
 	 this.conceptMap = conceptMap;
 	 this.layoutEngine = layoutEngine;
-	 this.$container.html("<canvas id='canvas' width='1000' height='800'></canvas>");
+	 this.$container.html("<canvas id='canvas' width='800' height='600'></canvas>");
 	 this.canvas = $("#canvas").get(0); 
        },
        conceptsLength: function() {
@@ -356,7 +356,8 @@
        },
        loadFacts: function () {
 	 this.needsRedraw = false;
-	 var triples = opts.tripleLoader(this);
+//	 console.log(opts.tripleLoader);
+	 var triples = opts.tripleLoader.func(this, opts.tripleLoader.args);
 	 var tl = triples.length;
 	 
 	 for (var i=0; i<tl; i++){

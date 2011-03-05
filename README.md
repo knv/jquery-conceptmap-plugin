@@ -4,7 +4,7 @@ Based on [JavaScript-Concept-Map](https://github.com/allain/JavaScript-Concept-M
 
 ### Usage
 
-`$(<element id>).conceptMap("tripleLoader": <triple-loader>);`
+`$("#container").conceptMap({tripleLoader: {func: textareaLoadEngine, args: {}}});`
 
 __triple-loader__ is any function which returns a list of objects in form of  `{concept1: topic1, relation: relation, concept2: topic2}`.
 

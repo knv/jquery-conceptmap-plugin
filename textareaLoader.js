@@ -27,13 +27,13 @@ function parseFact(fact){
   return null;
 };
 
-function textareaLoadEngine(conceptMap){
+function textareaLoadEngine(conceptMap, options){
 	 
   
   var $facts = $("#concepts");
   $facts.change(function(e){
 		  conceptMap.loadFacts(this.value);
-		  console.log('facts changed');
+//		  console.log('facts changed');
 		});
   var text = $facts.val();
   var facts = text.split('\n');
